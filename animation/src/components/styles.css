@@ -1,0 +1,77 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.opinsta {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    transition: transform 0.3s ease; /* Only transform transition needed */
+  }
+  
+  .opinsta::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background:cadetblue;
+    transform: scaleY(0); /* Scale vertically */
+    transform-origin: top; /* Start scaling from the top */
+    transition: transform 0.3s ease;
+    z-index: -1;
+  }
+  
+  .opinsta:hover::before {
+    transform: scaleY(1); /* Scale vertically on hover */
+  }
+  
+  .opinsta:hover {
+    transform: scale(0.95); /* Scale down on hover */
+    /* padding: 15px 15px; Increase padding on hover */
+  }
+  
+  .btn2 {
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    transition: transform 0.3s ease, margin 0.3s ease; /* Add margin and transform transition */
+  }
+  
+  .btn2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: hsl(200, 100%, 80%);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+  }
+  
+  .btn2:hover::before {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  
+  .btn2:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+
+
+  @keyframes skillAnimation {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .progress-bar-animated-custom {
+    animation: skillAnimation 2s forwards;
+  }
