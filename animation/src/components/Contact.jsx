@@ -93,7 +93,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="containerrr my-5">
+    <div className="containerrr bg-gray-700  my-5">
       <h2 className="text-2xl font-bold mb-4">My Skills</h2>
       {skillsData.map((skill) => (
         <div key={skill.name} className="skill mb-4">

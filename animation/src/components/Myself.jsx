@@ -18,11 +18,16 @@ const Myself = () => {
           About <span className="text-sky-500">Me</span>
         </h1>
         <p className="text-white text-sm sm:text-base lg:text-lg mb-4">
-          I am a passionate MERN STACK fresher with decent knowledge in Tailwind, GSAP, JavaScript, Redux Toolkit, ReactJS, MongoDB, NodeJS, and ExpressJS. I am looking forward to working on good products by solving problems and creating user-friendly experiences. All my personal and academic details are available on my CV down below. You can check it out.
+          I am a passionate MERN STACK DEVELOPER with decent knowledge in Tailwind, GSAP,Framer Motion, JavaScript, Redux Toolkit, ReactJS, MongoDB, NodeJS, and ExpressJS. I am looking forward to working on good products by solving problems and creating user-friendly experiences. All my personal and academic details are available on my CV down below. You can check it out.
         </p>
-        <button className="text-white bg-sky-700 hover:bg-sky-950 duration-150 ease-linear p-2 sm:p-3 md:p-4 lg:p-[1vw] rounded-3xl">
+        <a 
+          href="../resumedipesh (1) (1) (1) (1) (1) (1).pdf" // Replace this with the actual URL to your CV
+          download
+          className="text-white bg-sky-700 hover:bg-sky-950 duration-150 ease-linear p-2 sm:p-3 md:p-4 lg:p-[1vw] rounded-3xl"
+        >
           Download CV
-        </button>
+          </a>
+       
       </div>
     </div>
   );
